@@ -139,3 +139,39 @@ function create_post_type() {
     );
 }
 add_action( 'init', 'create_post_type' ); 
+
+function get_page_url($template_name) {
+    $pages = get_posts([
+        'post_type' => 'page',
+        'post_status' => 'publish',
+        'meta_query' => [
+            [
+                'key' => '_wp_page_template',
+                'value' => $template_name.'.php',
+                'compare' => '='
+            ]
+        ]
+    ]);
+    if(!empty($pages))
+    {
+      foreach($pages as $pages__value)
+      {
+          return get_permalink($pages__value->ID);
+      }
+    }
+    return get_bloginfo('url');
+}
+
+function my_login_logo() { ?>
+  <style type="text/css">
+    #login h1 a, .login h1 a {
+      background-image: url(<?php bloginfo('template_url') ?>/img/logo.svg);
+      width: 100%;
+      height: 53px;
+      background-size: auto;
+      padding: 20px 0px;
+      background-position: center;
+    }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

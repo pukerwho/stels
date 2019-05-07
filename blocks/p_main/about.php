@@ -29,7 +29,7 @@
               <?php echo carbon_get_post_meta($page, 'crb_about_block_text') ?>
             <?php endforeach; ?>
 					</div>
-					<a href="#">
+					<a href="<?php echo get_page_url('tpl_about') ?>">
 		  			<div class="more-button">
 		  				<div class="more-button__text">
 			  				<?php
