@@ -20,8 +20,9 @@ $(window).scroll(function(){
   }
 })
 
-$('iframe').load(function(){
-  $(this).contents().find('.place-card').hide();
+$('iframe').load( function() {
+  console.log($('iframe').contents().find('head'));
+    $('iframe').contents().find('head').append("<style type='text/css'>  .place-card{display:none;}  </style>");
 });
 
 //Callback Form Open

@@ -140,6 +140,9 @@ function create_post_type() {
 }
 add_action( 'init', 'create_post_type' ); 
 
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
 function get_page_url($template_name) {
     $pages = get_posts([
         'post_type' => 'page',
