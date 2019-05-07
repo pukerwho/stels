@@ -20,11 +20,6 @@ $(window).scroll(function(){
   }
 })
 
-$('iframe').load( function() {
-  console.log($('iframe').contents().find('head'));
-    $('iframe').contents().find('head').append("<style type='text/css'>  .place-card{display:none;}  </style>");
-});
-
 //Callback Form Open
 if ($('.callback').length > 0) {
   $(document).on('click', '.callback', function(){
