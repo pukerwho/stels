@@ -11059,6 +11059,9 @@ button.swiper-pagination-bullet {
   .callback__box {
     width: 100%; }
 
+  .p_main__partners-grid {
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr); }
   .p_main__partners-title:before, .p_main__partners-title:after {
     top: -15px; }
   .p_main__solutions-title:before, .p_main__solutions-title:after {
@@ -11069,6 +11072,17 @@ button.swiper-pagination-bullet {
     background-size: cover;
     background-position: 65%; }
 
+  .p_about__has-title {
+    font-size: 26px; }
+  .p_about__standarts-grid {
+    -ms-grid-columns: 1fr [1];
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px; }
+  .p_about__standarts-item:nth-child(2) {
+    margin-top: 50px; }
+  .p_about__standarts-item:nth-child(3) {
+    margin-top: 50px; }
+
   .p_sertificates__grid {
     -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(2, 1fr);
@@ -11078,6 +11092,8 @@ button.swiper-pagination-bullet {
 
   .p_contact {
     margin-bottom: 70px; }
+    .p_contact .welcome__map {
+      height: 100vh; }
     .p_contact__col {
       margin-bottom: 30px; }
       .p_contact__col:last-child {
@@ -11090,8 +11106,6 @@ button.swiper-pagination-bullet {
 
   .footer__col {
     margin-bottom: 40px; }
-    .footer__col:last-child {
-      margin-bottom: 0; }
   .footer__menu li:last-child {
     margin-bottom: 0; } }
 
