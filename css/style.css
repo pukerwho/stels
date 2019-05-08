@@ -9473,7 +9473,9 @@ a:hover {
       -o-transition: all 0.35s;
       transition: all 0.35s; }
       .p_main__solutions-item:hover .p_main__solutions-item-img img {
-        width: 105%;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
         -webkit-transition: all 0.55s;
         -o-transition: all 0.55s;
         transition: all 0.55s; }
@@ -10902,6 +10904,67 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
+@media (max-width: 3200px) {
+  .grey-cut-left {
+    bottom: -1px;
+    width: 22%;
+    -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%, 0 0%);
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%, 0 0%); }
+
+  .grey-cut-right {
+    bottom: -1px;
+    width: 22%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 22% 0%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 22% 0%); }
+
+  .blue-cut-left {
+    bottom: -1px;
+    width: 22%;
+    -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%, 0 0%);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%, 0 0%); }
+
+  .blue-cut-right, z {
+    bottom: -1px;
+    width: 22%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 22% 0%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 22% 0%); } }
+@media (max-width: 1920px) {
+  .grey-cut-left {
+    bottom: -1px;
+    width: 20%;
+    -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%, 0 0%);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%, 0 0%); }
+
+  .grey-cut-right {
+    bottom: -1px;
+    width: 20%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 20% 0%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 20% 0%); }
+
+  .blue-cut-left {
+    bottom: -1px;
+    width: 20%;
+    -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%, 0 0%);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%, 0 0%); }
+
+  .blue-cut-right {
+    bottom: -1px;
+    width: 20%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 20% 0%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 20% 0%); } }
+@media (max-width: 1200px) {
+  .grey-cut-left, .p_about__has .grey-cut-left {
+    height: 93px;
+    bottom: -1px; }
+
+  .grey-cut-right, .p_about__has .grey-cut-right {
+    height: 93px;
+    bottom: -1px; }
+
+  .header__logo {
+    width: 110px; }
+  .header__menu li a {
+    font-size: 14px; } }
 @media (max-width: 992px) {
   .pc-show {
     display: none !important; }
