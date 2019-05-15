@@ -20,7 +20,7 @@
 			<div class="m-auto">
 				<div class="animate-puk-mask">
 					<div class="callback animate-puk" data-effect="fade-left" data-delay="1.4s">
-						<div class="red-button">
+						<div class="blue-button">
 							<?php
 	              if ( function_exists( 'pll_the_languages' ) ) {
 	                pll_e('Связаться с нами'); 

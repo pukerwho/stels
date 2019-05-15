@@ -9025,7 +9025,7 @@ a:hover {
       -webkit-border-radius: 3px;
       border-radius: 3px;
       border: none;
-      background-color: #ac0001;
+      background-color: #319AFC;
       text-transform: uppercase; }
     .callback__modal .wpcf7-validation-errors {
       color: #ffffff; }
@@ -9059,7 +9059,7 @@ a:hover {
   .callback__line {
     width: 98px;
     height: 2px;
-    border: solid 2px #ac0001;
+    border: solid 2px #319AFC;
     margin: auto;
     margin-bottom: 30px; }
   .callback__close {
@@ -9068,18 +9068,18 @@ a:hover {
     right: 20px;
     cursor: pointer; }
 
-.red-button {
+.blue-button {
   color: #ffffff;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  background-color: #ac0001;
+  background-color: #319AFC;
   text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: all 0.35s cubic-bezier(0, 0, 0.19, 0.97);
   -o-transition: all 0.35s cubic-bezier(0, 0, 0.19, 0.97);
   transition: all 0.35s cubic-bezier(0, 0, 0.19, 0.97);
   padding: 15px 20px; }
-  .red-button:hover {
+  .blue-button:hover {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -9097,7 +9097,7 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  color: #ac0001;
+  color: #319AFC;
   font-family: ProximaNova-Regular;
   font-size: 15px;
   padding: 0 20px 15px 20px; }
@@ -9265,7 +9265,7 @@ a:hover {
       font-size: 16px;
       overflow: hidden; }
       .header__menu li a:hover {
-        color: #ac0001; }
+        color: #319AFC; }
   .header__lang {
     position: relative;
     color: #223966;
@@ -9300,7 +9300,7 @@ a:hover {
   margin-top: -1px;
   padding-top: 50px; }
   .footer a:hover {
-    color: #ac0001; }
+    color: #319AFC; }
   .footer__row {
     padding-bottom: 40px; }
   .footer__title {
@@ -9350,7 +9350,7 @@ a:hover {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     border: none;
-    background-color: #ac0001;
+    background-color: #319AFC;
     text-transform: uppercase;
     cursor: pointer; }
   .footer__form .wpcf7-validation-errors {
@@ -9402,7 +9402,7 @@ a:hover {
     text-transform: uppercase;
     margin-bottom: 5px; }
   .p_main__about-subtitle, .p_main__protect-subtitle {
-    color: #ac0001;
+    color: #319AFC;
     font-family: Lato-Regular;
     font-size: 20px;
     margin-bottom: 15px; }
@@ -9635,7 +9635,7 @@ a:hover {
     content: "•";
     width: 7px;
     display: inline-block;
-    color: #ac0001;
+    color: #319AFC;
     margin-right: 7px; }
   .p_single__content {
     color: #6a6a6a;
@@ -9714,7 +9714,7 @@ a:hover {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    background-color: rgba(172, 0, 1, 0.85);
+    background-color: rgba(49, 154, 252, 0.85);
     padding: 10px 0; }
     .welcome__description-inner {
       opacity: 0;
@@ -9883,7 +9883,7 @@ a:hover {
           content: "•";
           width: 7px;
           display: inline-block;
-          color: #ac0001;
+          color: #319AFC;
           margin-right: 7px; }
 
 .p_sertificates__content {
@@ -11095,7 +11095,7 @@ button.swiper-pagination-bullet {
     .mobile-cover-line {
       width: 50%;
       height: 3px;
-      background-color: #ac0001;
+      background-color: #319AFC;
       margin-bottom: 15px; }
     .mobile-cover .head_menu {
       margin-bottom: 30px; }
