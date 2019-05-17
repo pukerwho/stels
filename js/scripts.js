@@ -51,3 +51,27 @@ function showSert(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " p_sertificates__button-active";
 }
+
+if ($(document).width() > 760) {
+  var swiperSert = new Swiper('.p_main__partners-grid', {
+    slidesPerView: 5,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+}
+
+if ($(document).width() < 760) {
+  var swiperSert = new Swiper('.p_main__partners-grid', {
+    slidesPerView: 2,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+}
