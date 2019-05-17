@@ -16,6 +16,7 @@ pll_register_string( 'stels_protect', 'Техническая защита ин�
 pll_register_string( 'solutions_title', 'Наши направления' );
 pll_register_string( 'contact_navigation', 'Навигация по сайту' );
 pll_register_string( 'copyright', '© Copyright 1996-2018. Научно-производственное предприятие «СТЕЛС».' );
+pll_register_string( 'copyright_title', 'Разработано' );
 pll_register_string( 'partners_title', 'Наши партнеры' );
 
 ?>
