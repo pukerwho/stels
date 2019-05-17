@@ -95,11 +95,20 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright">
-              <?php
-              if ( function_exists( 'pll_the_languages' ) ) {
-                pll_e('© Copyright 1996-2019. Научно-производственное предприятие «СТЕЛС».'); 
-              }
-            ?>
+              <div class="mb-4">
+                <?php
+                  if ( function_exists( 'pll_the_languages' ) ) {
+                    pll_e('© Copyright 1996-2019. Научно-производственное предприятие «СТЕЛС».'); 
+                  }
+                ?>
+              </div>
+              <div>
+                <?php
+                  if ( function_exists( 'pll_the_languages' ) ) {
+                    pll_e('Разработано '); 
+                  }
+                ?> <a href="http://webkitchen.kiev.ua/" target="_blank">Webkitchen</a>
+              </div>
             </div>
           </div>
         </div>

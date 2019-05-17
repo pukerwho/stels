@@ -51,6 +51,14 @@ function crb_page_theme_options() {
         ))
         ->add_fields( array(
             Field::make( 'textarea', 'crb_about_standart', 'Текст для блока Стандарты' ),
+        ))
+        ->add_fields( array(
+            Field::make( 'complex', 'crb_about_numbers', 'Цифры О НАС:' )
+                ->set_layout( 'tabbed-horizontal')
+                ->add_fields( array(
+                    Field::make( 'text', 'crb_about_numbers_number', 'Цифра' ),
+                    Field::make( 'text', 'crb_about_numbers_text', 'Текст' ),
+            ) ),
         ));
     Container::make( 'post_meta', 'More' )
         ->where( 'post_type', '=', 'page' )

@@ -102,48 +102,21 @@ Template Name: О нас
 			<div class="row justify-content-center">
 				<div class="col-md-10">
 					<div class="p_about__standarts-grid">
+						<?php 
+							$about_numbers = carbon_get_the_post_meta( 'crb_about_numbers' );
+							foreach ( array_slice($about_numbers, 0, 3) as $about_number ): 
+						?>
 						<div class="p_about__standarts-item animate-puk" data-effect="fade" data-delay="0.8s">
 							<div class="p_about__standarts-box">
 								<div class="p_about__standarts-number">
-									130
+									<?php echo $about_number['crb_about_numbers_number'] ?>
 								</div>
 							</div>
 							<div class="p_about__standarts-text">
-								<?php
-									if ( function_exists( 'pll_the_languages' ) ) {
-								 		pll_e('квалифицированных специалистов'); 
-								 	}
-								?>
+								<?php echo $about_number['crb_about_numbers_text'] ?>
 							</div>
 						</div>
-						<div class="p_about__standarts-item animate-puk" data-effect="fade" data-delay="1.2s">
-							<div class="p_about__standarts-box">
-								<div class="p_about__standarts-number">
-									400
-								</div>
-							</div>
-							<div class="p_about__standarts-text">
-								<?php
-									if ( function_exists( 'pll_the_languages' ) ) {
-								 		pll_e('комплексных проектов'); 
-								 	}
-								?>
-							</div>
-						</div>
-						<div class="p_about__standarts-item animate-puk" data-effect="fade" data-delay="1.6s">
-							<div class="p_about__standarts-box">
-								<div class="p_about__standarts-number">
-									15
-								</div>
-							</div>
-							<div class="p_about__standarts-text">
-								<?php
-									if ( function_exists( 'pll_the_languages' ) ) {
-								 		pll_e('лет на рынке'); 
-								 	}
-								?>
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
